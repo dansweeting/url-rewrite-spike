@@ -1,0 +1,15 @@
+Examples
+
+A static file lives at:   /Scripts/_references.js
+
+Using the configured url rewriting rules, 
+any request with an arbitrary version number prefix, 
+such as:  /v1.0.0.0/Scripts/_references.js
+
+would be redirected to /Scripts/_reference.js
+
+Rule would need to be tightened up... this rule is based on a really generic regex 
+that would currently match on any top level folder prefixed with v!  
+
+
+ The rules file lives in Rewrite.Web\ManagedFusion.Rewriter.txt
